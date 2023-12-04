@@ -30,7 +30,7 @@
 
 ### Решение 2
 
-####keepalived.conf Server1
+#### keepalived.conf Server1
 
 ```
 vrrp_script check_nginx {
@@ -56,7 +56,7 @@ vrrp_instance VI_1 {
 
 ```
 
-####keepalived.conf Server2
+#### keepalived.conf Server2
 
 ```
 vrrp_script check_nginx {
@@ -82,7 +82,7 @@ vrrp_instance VI_1 {
 
 ```
 
-####bash-скрипт
+#### bash-скрипт
 
 ```bash
 #!/bin/bash
@@ -94,11 +94,11 @@ fi
 ```
 
 
-####Скриншот переезда Master
+#### Скриншот переезда Master
 
 ![Master — Зайцев.В.А](https://github.com/vladrabbit/hw_img/blob/main/img/nginx-k1.png)
 
-####Скриншот переезда Backup
+#### Скриншот переезда Backup
 
 ![Backup1 — Зайцев.В.А](https://github.com/vladrabbit/hw_img/blob/main/img/nginx-k2.png)
 ![Backup2 — Зайцев.В.А](https://github.com/vladrabbit/hw_img/blob/main/img/nginx-k3.png)
