@@ -26,7 +26,7 @@
 
 ### Решение 2
 
-	![Status- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/memcached.png)
+![Status- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/memcached.png)
 
 
 ### Задание 3. Удаление по TTL в Memcached
@@ -37,8 +37,8 @@
 
 ### Решение 3
 	
-	![TTL- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/memcachedttl.png)
-	![ListScript- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/memcached_py.png)
+![TTL- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/memcachedttl.png)
+![ListScript- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/memcached_py.png)
 
 ### Задание 4. Запись данных в Redis
 
@@ -48,6 +48,6 @@
 
 ### Решение 4
 
-	![REDIS- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/redis.png) 
+![REDIS- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/redis.png) 
  
 ---
