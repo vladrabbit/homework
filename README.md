@@ -3,51 +3,49 @@
 
 ---
 
-### Задание 1. Задание 1. Кеширование
+### Задание 1. Elasticsearch
 
-	Приведите примеры проблем, которые может решить кеширование.
+	Установите и запустите Elasticsearch, после чего поменяйте параметр cluster_name на случайный.
 
-	Приведите ответ в свободной форме.
+	Приведите скриншот команды 'curl -X GET 'localhost:9200/_cluster/health?pretty', сделанной на сервере с установленным Elasticsearch. Где будет виден нестандартный cluster_name.
 
 ### Решение 1
-	- Повышение производительности
-	- Увеличение скорости ответа
-	- Экономия ресурсов
-	- Сглаживание бустов трафика
+
+![ELK-Cluster_name- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/elk-1.png)
+
 	
 
 
-### Задание 2. Memcashed
+### Задание 2. Kibana
 
-	Установите и запустите memcached.
+	Установите и запустите Kibana.
 
-	Приведите скриншот systemctl status memcached, где будет видно, что memcached запущен.
-
+	Приведите скриншот интерфейса Kibana на странице http://<ip вашего сервера>:5601/app/dev_tools#/console, где будет выполнен запрос GET /_cluster/health?pretty.
 
 ### Решение 2
 
-![Status- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/memcached.png)
+![Kibana- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/kibana-1.png)
 
 
-### Задание 3. Удаление по TTL в Memcached
+### Задание 3. Logstash
 
-	Запишите в memcached несколько ключей с любыми именами и значениями, для которых выставлен TTL 5.
+	Установите и запустите Logstash и Nginx. С помощью Logstash отправьте access-лог Nginx в Elasticsearch.
 
-	Приведите скриншот, на котором видно, что спустя 5 секунд ключи удалились из базы.
+	Приведите скриншот интерфейса Kibana, на котором видны логи Nginx.
 
 ### Решение 3
 	
-![TTL- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/memcachedttl.png)
-![ListScript- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/memcached_py.png)
+![Logstash- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/logstash-1.png)
 
-### Задание 4. Запись данных в Redis
 
-	Запишите в Redis несколько ключей с любыми именами и значениями.
+### Задание 4. Задание 4. Filebeat.
 
-	Через redis-cli достаньте все записанные ключи и значения из базы, приведите скриншот этой операции.
+	Установите и запустите Filebeat. Переключите поставку логов Nginx с Logstash на Filebeat.
+
+	Приведите скриншот интерфейса Kibana, на котором видны логи Nginx, которые были отправлены через Filebeat.
 
 ### Решение 4
 
-![REDIS- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/redis.png) 
+![Filebeat- В.А.Зайцев](https://github.com/vladrabbit/hw_img/blob/main/img/filebeats.png) 
  
 ---
