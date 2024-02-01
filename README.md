@@ -55,36 +55,35 @@
 #### Сотрудники
 
 	1: Employee_table
-
-	   emloyee_id = (int)
-	   имя = (varchar(50))
+           emloyee_id = (int)
+           имя = (varchar(50))
            фамилия = (varchar(50))
            отчество = (varchar(50))
            дата найма = (date)
            PRIMARY KEY(pk_employee) = [id, имя, фамилия, отчество, дата приема]
-	   FOREIGN KEY = [pk_posotion, pk_structural, pk_address]  
+           FOREIGN KEY = [pk_posotion, pk_structural, pk_address]  
 
 	2: Salary_Table
-	   salary_id = (int)
+           salary_id = (int)
            оклад = (money/float)
-	   PRIMARY KEY(pk_salary) = [id, оклад]
+           PRIMARY KEY(pk_salary) = [id, оклад]
            FOREIGN KEY = [emloyee_id]
 
 	3: Position_table
-	   position_id = (int)
-	   должность = (varchar(50))
+           position_id = (int)
+           должность = (varchar(50))
            PRIMARY KEY(pk_posotion) = [id, должность]
 
 	4: Type_of_division_table
            type_id = (int)
-	   тип подразделения = (varchar(50))
-	   PRIMARY KEY(pk_type) = [id, тип подразделения]
+           тип подразделения = (varchar(50))
+           PRIMARY KEY(pk_type) = [id, тип подразделения]
 
 	5: Structural_division_table
-	   structural_id = (int)
+           structural_id = (int)
            структурное подразделение = (varchar(50))
            PRIMARY KEY(pk_structural) = [id, структурное подразделение]
-	   FOREIGN KEY = [type_id]
+           FOREIGN KEY = [type_id]
 
 	6: Branch_address_table
            branch_id = (int)
