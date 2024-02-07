@@ -1,100 +1,87 @@
-# Домашнее задание к занятию "`Базы данных`" - `Владлен Зайцев`
+# Домашнее задание к занятию «Работа с данными (DDL/DML)» - `Владлен Зайцев`
 
 
 ---
 
-# Легенда
-
-	Заказчик передал вам файл в формате Excel, в котором сформирован отчёт.
-
-	На основе этого отчёта нужно выполнить следующие задания.
-
 
 ## Задание 1.
 
-	Опишите не менее семи таблиц, из которых состоит база данных:
+	1.1. Поднимите чистый инстанс MySQL версии 8.0+. Можно использовать локальный сервер или контейнер Docker.
 
-    	  какие данные хранятся в этих таблицах;
-    	  какой тип данных у столбцов в этих таблицах, если данные хранятся в PostgreSQL.
+	1.2. Создайте учётную запись sys_temp.
 
-	Приведите решение к следующему виду:
+	1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
 
-	  Сотрудники (
+	1.4. Дайте все права для пользователя sys_temp.
 
-            идентификатор, первичный ключ, serial,
-            фамилия varchar(50),
-            ...
-            идентификатор структурного подразделения, внешний ключ, integer).
- 
+	1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
+
+	1.6. Переподключитесь к базе данных от имени sys_temp.
+
+	Для смены типа аутентификации с sha2 используйте запрос:
+
+	ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+	1.6. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
+
+	1.7. Восстановите дамп в базу данных.
+
+	1.8. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
+
+	Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.
+
+
 ## Решение 1
 
-### Опишите не менее семи таблиц, из которых состоит база данных:
+### 1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
 
-##### какие данные хранятся в этих таблицах;
+![Запрос списка пользователей](https://github.com/vladrabbit/hw_img/blob/main/img/mysql1.png)
 
-	1. ФИО сотрудника, Дата найма
-	2. Оклад
-	3. Должность
-	4. Тип подразделения 
-	5. Структурное подразделение
-	6. Адрес филиала
-	7. Проект на который назначен
 
-##### какой тип данных у столбцов в этих таблицах, если данные хранятся в PostgreSQL.
+### 1.4. Дайте все права для пользователя sys_temp
+![Создание пользователя](https://github.com/vladrabbit/hw_img/blob/main/img/mysql2.png)
 
-	1. [varchar(n), date]
-	2. money
-	3. varchar(n)
-	4. varchar(n)
-	5. varchar(n)
-	6. varchar(n)
-	7. varchar(n)
+### 1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
 
-### Приведите решение к следующему виду:
+![Права пользователя](https://github.com/vladrabbit/hw_img/blob/main/img/mysql3.png)
 
-#### Сотрудники
+### 1.8. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
 
-	1: Employee_table
-           emloyee_id = (int)
-           имя = (varchar(50))
-           фамилия = (varchar(50))
-           отчество = (varchar(50))
-           дата найма = (date)
-           PRIMARY KEY(pk_employee) = [id, имя, фамилия, отчество, дата приема]
-           FOREIGN KEY = [pk_posotion, pk_structural, pk_address]  
+![IDE](https://github.com/vladrabbit/hw_img/blob/main/img/sakila.png)
 
-	2: Salary_Table
-           salary_id = (int)
-           оклад = (money/float)
-           PRIMARY KEY(pk_salary) = [id, оклад]
-           FOREIGN KEY = [emloyee_id]
+![CLI](https://github.com/vladrabbit/hw_img/blob/main/img/sakilacli.png)
 
-	3: Position_table
-           position_id = (int)
-           должность = (varchar(50))
-           PRIMARY KEY(pk_posotion) = [id, должность]
 
-	4: Type_of_division_table
-           type_id = (int)
-           тип подразделения = (varchar(50))
-           PRIMARY KEY(pk_type) = [id, тип подразделения]
+## Задание 2.
 
-	5: Structural_division_table
-           structural_id = (int)
-           структурное подразделение = (varchar(50))
-           PRIMARY KEY(pk_structural) = [id, структурное подразделение]
-           FOREIGN KEY = [type_id]
+	Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
 
-	6: Branch_address_table
-           branch_id = (int)
-           адрес филиала = (varchar(100))
-           PRIMARY KEY(pk_address) = [id, адрес филиала]
+	Название таблицы | Название первичного ключа
+	customer         | customer_id
 
-	7: Project_table
-           project_id = (int)
-           проект = (varchar(100))
-           PRIMARY KEY(pk_project) = [id, проект]
-           FOREIGN KEY = [structural_id(1), structural_id(2), structural_id(n)]
+
+## Решение 2.
+	
+	Название таблицы | Название первичного ключа
+	actor		 | actor_id
+	address		 | address_id
+	category	 | category_id
+	city		 | city_id
+	country		 | country_id
+	customer	 | customer_id
+	film		 | film_id
+	film_actor	 | actor_id, film_id
+	film_category	 | film_id, category_id
+	film_text	 | film_id
+	inventory	 | inventory_id
+	language	 | language_id
+	payment		 | payment_id
+	rental		 | rental_id
+	staff		 | staff_id
+	store		 | store_id
+
+
+
 
 
 ---
