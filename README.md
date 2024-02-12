@@ -12,7 +12,7 @@
 
 ### Получите уникальные названия районов из таблицы с адресами, которые начинаются на “K” и заканчиваются на “a” и не содержат пробелов.
 
-![Названия районов](https://github.com/vladrabbit/hw_img/blob/main/img/SQL1_1.png)
+![Названия районов](https://github.com/vladrabbit/hw_img/blob/main/img/SQL_1_6.png)
 
 
 ## Задание 2.
