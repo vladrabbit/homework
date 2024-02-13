@@ -35,7 +35,7 @@
 
 ## Решение 3.
 
-![Большая сумма платежей](https://github.com/vladrabbit/hw_img/blob/main/img/SQL_2_3.png)
+![Большая сумма платежей](https://github.com/vladrabbit/hw_img/blob/main/img/SQL_2_rep.png)
 
 
 ---
