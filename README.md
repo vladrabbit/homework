@@ -58,9 +58,9 @@
 
 ### Какие уязвимости были вами обнаружены? (список со ссылками: достаточно трёх уязвимостей)
 
-	1. [vsftpd 2.3.4 - Backdoor Command Execution](https://www.exploit-db.com/exploits/49757)
-	2. [Множественные уязвимости в Apache HTTP Server](https://www.securitylab.ru/vulnerability/419165.php)
-	3. [ProFTPd 1.3 - 'mod_sql' 'Username' SQL Injection](https://www.exploit-db.com/exploits/32798)
+[vsftpd 2.3.4 - Backdoor Command Execution](https://www.exploit-db.com/exploits/49757)
+[Множественные уязвимости в Apache HTTP Server](https://www.securitylab.ru/vulnerability/419165.php)
+[ProFTPd 1.3 - 'mod_sql' 'Username' SQL Injection](https://www.exploit-db.com/exploits/32798)
 
 
 ## Задание 2.
