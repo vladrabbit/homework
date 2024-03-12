@@ -16,7 +16,7 @@
 
 ## Решение 1
 
-[Каталог пользователя](https://github.com/vladrabbit/hw_img/blob/main/img/sechost1.png)
+![Каталог пользователя](https://github.com/vladrabbit/hw_img/blob/main/img/sechost1.png)
 
 ## Задание 2.
 
@@ -29,7 +29,7 @@
 
 ## Решение 2.
 	
-[Выполнение команд 1](https://github.com/vladrabbit/hw_img/blob/main/img/sechost2.png)
-[Выполнение комманд 2](https://github.com/vladrabbit/hw_img/blob/main/img/sechost3.png)
+![Выполнение команд 1](https://github.com/vladrabbit/hw_img/blob/main/img/sechost2.png)
+![Выполнение комманд 2](https://github.com/vladrabbit/hw_img/blob/main/img/sechost3.png)
 
 ---
