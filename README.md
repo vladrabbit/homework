@@ -42,5 +42,12 @@ https://gitlab.com/YOUR_LOGIN/devops-netology. Изучите предлагае
 
 ## Решение 1
 
-	1. 
+Задания выполнял на локальном сервере gitlab ввиду невозможности регистрации на [gitlab](https://gitlab.com/users/sign_up)
+
+1. Вывод команды `git remote -v` и `git push`
+![cli листинг с локальной машины](https://github.com/vladrabbit/hw_img/blob/main/img/cligit1.png)
+1. Скриншот репозитория на сервере
+![gitlab local](https://github.com/vladrabbit/hw_img/blob/main/img/gitlabweb1.png)
+
+ 
 ---
