@@ -49,5 +49,24 @@ https://gitlab.com/YOUR_LOGIN/devops-netology. Изучите предлагае
 1. Скриншот репозитория на сервере
 ![gitlab local](https://github.com/vladrabbit/hw_img/blob/main/img/gitlabweb1.png)
 
- 
+
+## Задание 2. Теги
+
+Представьте ситуацию, когда в коде была обнаружена ошибка — надо вернуться на предыдущую версию кода,
+исправить её и выложить исправленный код в продакшн. Мы никуда не будем выкладывать код, но пометим некоторые коммиты тегами и создадим от них ветки.
+
+1. Создайте легковестный тег `v0.0` на HEAD-коммите и запуште его во все три добавленных на предыдущем этапе `upstream`.
+1. Аналогично создайте аннотированный тег `v0.1`.
+1. Перейдите на страницу просмотра тегов в GitHab (и в других репозиториях) и посмотрите, чем отличаются созданные теги.
+    * в GitHub — https://github.com/YOUR_ACCOUNT/devops-netology/releases;
+    * в GitLab — https://gitlab.com/YOUR_ACCOUNT/devops-netology/-/tags;
+    * в Bitbucket — список тегов расположен в выпадающем меню веток на отдельной вкладке.
+
+
+## Решение 1
+
+![cli листинг](https://github.com/vladrabbit/hw_img/blob/main/img/clitag.png)
+![gitlablocal tag](https://github.com/vladrabbit/hw_img/blob/main/img/gitlabwebtag.png)
+[Github tag](https://github.com/vladrabbit/devops_netology/tags)
+![Скриншот Github](https://github.com/vladrabbit/hw_img/blob/main/img/githubtag.png) 
 ---
