@@ -63,7 +63,7 @@ https://gitlab.com/YOUR_LOGIN/devops-netology. Изучите предлагае
     * в Bitbucket — список тегов расположен в выпадающем меню веток на отдельной вкладке.
 
 
-## Решение 1
+## Решение 2
 
 1. CLI листинг 
 ![cli листинг](https://github.com/vladrabbit/hw_img/blob/main/img/clitag.png)
@@ -72,5 +72,32 @@ https://gitlab.com/YOUR_LOGIN/devops-netology. Изучите предлагае
 ![gitlablocal tag](https://github.com/vladrabbit/hw_img/blob/main/img/gitlabwebtag.png)
 
 1. [Github tag](https://github.com/vladrabbit/devops_netology/tags)
-![Скриншот Github](https://github.com/vladrabbit/hw_img/blob/main/img/githubtag.png) 
+![Скриншот Github](https://github.com/vladrabbit/hw_img/blob/main/img/githubtag.png)
+
+## Задание 3. Ветки 
+
+Давайте посмотрим, как будет выглядеть история коммитов при создании веток.
+
+1. Переключитесь обратно на ветку `main`, которая должна быть связана с веткой `main` репозитория на `github`.
+1. Посмотрите лог коммитов и найдите хеш коммита с названием `Prepare to delete and move`, который был создан в пределах предыдущего домашнего задания.
+1. Выполните `git checkout` по хешу найденного коммита.
+1. Создайте новую ветку `fix`, базируясь на этом коммите `git switch -c fix`.
+1. Отправьте новую ветку в репозиторий на GitHub `git push -u origin fix`.
+1. Посмотрите, как визуально выглядит ваша схема коммитов: https://github.com/YOUR_ACCOUNT/devops-netology/network.
+1. Теперь измените содержание файла `README.md`, добавив новую строчку.
+1. Отправьте изменения в репозиторий и посмотрите, как изменится схема на странице https://github.com/YOUR_ACCOUNT/devops-netology/network
+и как изменится вывод команды `git log`.
+
+## Решение 3
+
+1. Github ветка fix до изменений README
+
+![GH1](https://github.com/vladrabbit/hw_img/blob/main/img/githubfix1.png)
+
+1. Github ветка fix после изменений README
+
+![GH2](https://github.com/vladrabbit/hw_img/blob/main/img/githubfix2.png)
+
+
+
 ---
