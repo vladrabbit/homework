@@ -65,8 +65,12 @@ https://gitlab.com/YOUR_LOGIN/devops-netology. Изучите предлагае
 
 ## Решение 1
 
+1. CLI листинг 
 ![cli листинг](https://github.com/vladrabbit/hw_img/blob/main/img/clitag.png)
+
+1. Gitlab локальный сервер, скриншот тегов
 ![gitlablocal tag](https://github.com/vladrabbit/hw_img/blob/main/img/gitlabwebtag.png)
-[Github tag](https://github.com/vladrabbit/devops_netology/tags)
+
+1. [Github tag](https://github.com/vladrabbit/devops_netology/tags)
 ![Скриншот Github](https://github.com/vladrabbit/hw_img/blob/main/img/githubtag.png) 
 ---
